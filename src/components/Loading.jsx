@@ -10,9 +10,11 @@ export default (props) => {
 
     return (
         <S.ContainerLoadingImage altura={altura}>
+
             <S.PokeBallSpiner src={pokeballImage}/>
+
             <S.LoadingImage src={loadingPokeListImage}/>
+
         </S.ContainerLoadingImage>
-        
     )
 }

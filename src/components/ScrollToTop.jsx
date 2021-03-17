@@ -7,10 +7,10 @@ import icon from '../assets/icons/arrowTop.png'
 export default (props) => {
 
     const {y: pageYOffset} = useWindowScroll()
-    const [visible, setVisible] = useState(false)
+    const [ visible, setVisible ] = useState(false)
 
     useEffect(() => {
-
+        
         if(pageYOffset > 400){
             setVisible(true)
 

@@ -2,7 +2,7 @@ import React from 'react'
 
 import * as S from '../style'
 
-export default ({height, weight}) => {
+export default ({ height, weight }) => {
 
     return (
         <S.PokeBodyInfo>

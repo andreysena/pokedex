@@ -270,9 +270,15 @@ export const EachType = styled.div`
     }
 `
 
-export const TextofType = styled.a`
+export const TextOfType = styled.a`
     display: flex;
-    color: ${({color}) => color[0]};
+    color: ${(props) => {
+        if(props.color){
+            return props.color[0]
+        }else{
+            return "#000"
+        }
+    }};
     font-size: 16px;
     font-weight: 700;
 

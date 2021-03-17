@@ -21,11 +21,10 @@ export default function App() {
 				axios.get(`https://pokeapi.co/api/v2/pokemon/${i}`)
 					.then(response => response.data)
 					.catch(error => {
-						console.log(i + " "+ error)
+						console.log("Request com id do Pokémon: ", i, ". Retornou erro: ", error)
 						return []
 					})	
 			)
-
 		}	
 
 		Promise.all(pokemonPromises)
@@ -42,11 +41,11 @@ export default function App() {
 				<S.GlobalStyle />
 				<Loading />
 			</>
-	)
+		)
 
 	return (
 		<>
-			<S.GlobalStyle/>
+			<S.GlobalStyle />
 			<PokeTitle />
 			<S.MainContainer>
 				<PokeList pokemon={pokemonInfo} />	

@@ -3,7 +3,7 @@ import React from 'react'
 import * as S from '../style'
 import colorByType from '../utils/colorByType'
 
-export default ({id, types}) => {
+export default ({ id, types }) => {
 
     return (
         <S.ImageDiv bgColor={types ? colorByType(types) : colorByType(null)}>
