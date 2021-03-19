@@ -2,11 +2,14 @@ import styled, { createGlobalStyle, keyframes } from 'styled-components'
 
 export const GlobalStyle = createGlobalStyle`
     body {
+        height: 100vh;
         background: -moz-linear-gradient( to right, #0052b0, #ffd400 );
         background: -webkit-linear-gradient( to right, #0052b0, #ffd400 );
         background: -o-linear-gradient( to right, #0052b0, #ffd400 );
         background: linear-gradient( to right, #0052b0, #ffd400);
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        margin: 0;
+        padding: 0;
     }
 
     @media(max-width: 800px){
@@ -18,14 +21,27 @@ export const GlobalStyle = createGlobalStyle`
 
 export const ContainerLoadingImage = styled.div`
     display: flex;
-    min-height: ${({altura}) => `${altura}px`};
+    min-height: 40vh;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    @media only screen and (max-width: 800px){
+        min-height: 20vh;
+    }
+
+    @media only screen and (min-width: 3840px){
+        min-height: 50vh;
+    }
+
 `
 
 export const LoadingImage = styled.img`
     width: 300px;
+
+    @media only screen and (max-width: 800px){
+        width: 150px;
+    }
     
     @media only screen and (min-width: 3840px){
         width: 800px;
@@ -44,6 +60,10 @@ const spiner = keyframes`
 export const PokeBallSpiner = styled.img`
     width: 50px;
     animation: ${spiner} 0.7s linear infinite;
+
+    @media only screen and (max-width: 800px){
+        width: 30px;
+    }
 
     @media only screen and (min-width: 3840px){
         width: 150px;
@@ -72,16 +92,16 @@ export const TitleImage = styled.img`
 
 export const MainContainer = styled.div`
     display: flex;
+    min-height: 60vh;
     flex-direction: column;
-    justify-content: center;
 `
 
 export const TitleOpitionsGen = styled.h1`
     color: #FFF;
-    margin-bottom: 0;
     font-size: 20px;
     text-align: center;
-
+    margin-bottom: 0;
+    
     @media(max-width: 800px){
         margin: 8% 0% 0% 0%;
     }
@@ -94,11 +114,11 @@ export const TitleOpitionsGen = styled.h1`
 export const GenOpitionBar = styled.div`
     display: flex;
     justify-content: center;
-    margin: 1.5% 0% 2% 0%;
     flex-wrap: wrap;
-
+    margin: 1.5% 0% 2% 0%;
+    
     @media(max-width: 800px){
-        margin: 4% 0% 8% 0%;
+        margin: 4% 1% 8% 1%;
     }
 `
 
@@ -407,7 +427,6 @@ export const ModalContent = styled.div`
     margin: 2%;
     flex-direction: column;
     justify-content: center;
-    
 `
 
 export const FirstModalDivision = styled.div`
@@ -468,5 +487,40 @@ export const TitleStats = styled.h4`
 
     @media only screen and (min-width: 3840px){
         font-size: 22px;
+    }
+`
+
+export const Footer = styled.div`
+    background-color: transparent; 
+    display: flex;
+    width: 100%;
+    height: 5vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 4% 0% 1% 0%;
+    bottom: 0;
+`
+
+export const FooterLine = styled.p`
+    margin: 0%;
+`
+
+export const FooterLink = styled.a`
+    color: #ffd400;
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+
+    @media only screen and (min-width: 3480px){
+        font-size: 24px;
+    }
+`
+
+export const FooterText = styled.a`
+    font-size: 15px;
+
+    @media only screen and (min-width: 3480px){
+        font-size: 24px;
     }
 `
