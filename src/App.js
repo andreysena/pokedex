@@ -5,17 +5,24 @@ import * as S from './style'
 
 import Loading from './components/Loading'
 import PokeTitle from './components/PokeTitle'
+import pokemonByGeneration from './utils/pokemonByGeneration'
+import GenerationBarOpitions from './components/GenerationBarOpitions'
 import PokeList from './components/PokeList'
+import Footer from './components/Footer'
 
 export default function App() {
 
-	const [ pokemonInfo, setPokemonInfo ] = useState([])
 	const pokemonPromises = []
-	const [isLoading, setIsLoading ] = useState(true)
+	const [ pokemonInfo, setPokemonInfo ] = useState([])
+	const [ isLoading, setIsLoading ] = useState(true)
+	const [ actualGeneration, setActualGeneration ] = useState(1)
+	const [ rangeGeneration, setRangeGeneration ] = useState(pokemonByGeneration(1))
 	
 	useEffect(() => {
 
-		for(let i = 1; i <= 898; i++){
+		setIsLoading(true)
+
+		for(let i = rangeGeneration[0]; i <= rangeGeneration[1]; i++){
 
 			pokemonPromises.push(
 				axios.get(`https://pokeapi.co/api/v2/pokemon/${i}`)
@@ -25,7 +32,7 @@ export default function App() {
 						return []
 					})	
 			)
-		}	
+		}
 
 		Promise.all(pokemonPromises)
 			.then(pokemon => {
@@ -33,23 +40,29 @@ export default function App() {
 				setPokemonInfo(pokemon)
 				setIsLoading(false)
 			})
-	}, [])
 
-	if(isLoading)
-		return (
-			<>
-				<S.GlobalStyle />
-				<Loading />
-			</>
-		)
+	}, [rangeGeneration])
 
 	return (
 		<>
 			<S.GlobalStyle />
 			<PokeTitle />
 			<S.MainContainer>
-				<PokeList pokemon={pokemonInfo} />	
+				<GenerationBarOpitions 
+					actualGeneration={actualGeneration}
+					setActualGeneration={setActualGeneration}
+					alterGeneration={setRangeGeneration} 
+				/>
+				{
+					isLoading ?
+						<Loading />
+						:
+						<>
+							<PokeList pokemon={pokemonInfo} />
+						</>
+				}	
 			</S.MainContainer>
+			<Footer />
 		</>
 	)
 }

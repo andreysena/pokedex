@@ -2,21 +2,21 @@ export default (generation) => {
 
     switch (generation){
         case 1:
-            return [0, 150]
+            return [1, 151]
         case 2:
-            return [151, 250]
+            return [152, 251]
         case 3:
-            return [251, 385]
+            return [252, 386]
         case 4:
-            return [386, 492]
+            return [387, 493]
         case 5:
-            return [493, 648]
+            return [494, 649]
         case 6:
-            return [649, 720]
+            return [650, 721]
         case 7:
-            return [721, 808]
+            return [722, 809]
         case 8:
-            return [809, 898]
+            return [810, 898]
         default:
             return []
     }

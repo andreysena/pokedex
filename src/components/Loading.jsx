@@ -1,7 +1,7 @@
 import React from 'react'
 
 import * as S from '../style'
-import loadingPokeListImage from '../assets/images/loadingPokeList.png'
+import loadingGenerationImage from '../assets/images/loadingGeneration.png'
 import pokeballImage from '../assets/images/pokeball.png'
 
 export default (props) => {
@@ -13,7 +13,7 @@ export default (props) => {
 
             <S.PokeBallSpiner src={pokeballImage}/>
 
-            <S.LoadingImage src={loadingPokeListImage}/>
+            <S.LoadingImage src={loadingGenerationImage}/>
 
         </S.ContainerLoadingImage>
     )
