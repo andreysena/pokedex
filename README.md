@@ -21,7 +21,7 @@
 
 ## Descrição do projeto
 O projeto consiste em uma Aplicação Web que exibe uma lista de Pokémon por geração e os detalhes de cada um deles.  
-A aplicação consome a <a href="https://pokeapi.co/">PokéAPI</a> para obter as informações necessárias sobre os Pokémon.
+A aplicação consome a <a href="https://pokeapi.co/" target="_blank">PokéAPI</a> para obter as informações necessárias sobre os Pokémon.
 
 <br/>
 
@@ -40,7 +40,7 @@ A aplicação consome a <a href="https://pokeapi.co/">PokéAPI</a> para obter as
 ---
 
 ## Site
-Clique no link a seguir para acessar a aplicação: <a href="https://andreysena.github.io/pokedex/">Pokédex</a>
+Clique no link a seguir para acessar a aplicação: <a href="https://andreysena.github.io/pokedex/" target="_blank">Pokédex</a>
 
 <br/>
 
