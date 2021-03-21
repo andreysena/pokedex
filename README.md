@@ -33,7 +33,7 @@ A aplicação consome a <a href="https://pokeapi.co/" target="_blank">PokéAPI</
 ![Lista de Pokémon - Imagem 2](https://github.com/andreysena/pokedex/blob/main/readme_images/image-2.png)
 
 > ### Modal de detalhes do Pokémon  
-![Modal de detalhes do Pokémon](https://github.com/andreysena/pokedex/blob/main/readme_images/image-2.png)
+![Modal de detalhes do Pokémon](https://github.com/andreysena/pokedex/blob/main/readme_images/image-3.png)
 
 <br/>
 
