@@ -2,45 +2,45 @@
 
 <p align="center">
 
-![GitHub last commit](https://img.shields.io/github/last-commit/andreysena/pokedex?style=for-the-badge)
-![GitHub repo size](https://img.shields.io/github/repo-size/andreysena/pokedex?style=for-the-badge)
-![GitHub language count](https://img.shields.io/github/languages/count/andreysena/pokedex?style=for-the-badge)
-![GitHub forks](https://img.shields.io/github/forks/andreysena/pokedex?style=for-the-badge)
-![Bitbucket open issues](https://img.shields.io/bitbucket/issues/andreysena/pokedex?style=for-the-badge)
-![Bitbucket open pull requests](https://img.shields.io/bitbucket/pr-raw/andreysena/pokedex?style=for-the-badge)
-![GitHub license](https://img.shields.io/github/license/andreysena/pokedex?style=for-the-badge)
+<img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/andreysena/pokedex?style=for-the-badge">
+<img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/andreysena/pokedex?style=for-the-badge">
+<img alt="GitHub language count" src="https://img.shields.io/github/languages/count/andreysena/pokedex?style=for-the-badge">
+<img alt="GitHub forks" src="https://img.shields.io/github/forks/andreysena/pokedex?style=for-the-badge">
+<img alt="Bitbucket open issues" src="https://img.shields.io/bitbucket/issues/andreysena/pokedex?style=for-the-badge">
+<img alt="Bitbucket open pull requests" src="https://img.shields.io/bitbucket/pr-raw/andreysena/pokedex?style=for-the-badge">
+<img alt="GitHub license" src="https://img.shields.io/github/license/andreysena/pokedex?style=for-the-badge">
 
 </p>
 
 <br/>
 
 ## Tecnologia utilizada
-![ReactJS](https://img.shields.io/badge/-REACT_JS-informational?style=for-the-badge&logo=react&color=4040ff)
+![React JS](https://img.shields.io/badge/-REACT_JS-informational?style=for-the-badge&logo=react&color=4040ff)
 
 <br/>
 
 ## Descrição do projeto
 O projeto consiste em uma Aplicação Web que exibe uma lista de Pokémon por geração e os detalhes de cada um deles.  
-A aplicação consume a [PokéAPI](https://pokeapi.co/) para obter as informações necessárias sobre os Pokémon.
+A aplicação consome a <a src="https://pokeapi.co/" target="_blank">PokéAPI</a> para obter as informações necessárias sobre os Pokémon.
 
 <br/>
 
 ## Imagens do projeto
 
 > ### Lista de Pokémon
-![Create](./readme_images/image-1.png)
+![Lista de Pokémon - Imagem 1](https://github.com/andreysena/pokedex/blob/main/readme_images/image-1.png)
 
-![Create](./readme_images/image-2.png)
+![Lista de Pokémon - Imagem 2](https://github.com/andreysena/pokedex/blob/main/readme_images/image-2.png)
 
-> ### Destalhes do Pokémon  
-![Create](./readme_images/image-3.png)
-
----
+> ### Modal de detalhes do Pokémon  
+![Modal de detalhes do Pokémon](https://github.com/andreysena/pokedex/blob/main/readme_images/image-2.png)
 
 <br/>
 
+---
+
 ## Site
-Clique no link a seguir para acessar a aplicação: [Pokédex](https://andreysena.github.io/pokedex/)
+Clique no link a seguir para acessar a aplicação: <a href="https://andreysena.github.io/pokedex/" target="_blank">Pokédex</a>
 
 <br/>
 
@@ -48,4 +48,4 @@ Clique no link a seguir para acessar a aplicação: [Pokédex](https://andreysen
 
 ## Licença
 
-Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE.md) para mais detalhes.
+Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
