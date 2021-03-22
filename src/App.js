@@ -36,7 +36,6 @@ export default function App() {
 
 		Promise.all(pokemonPromises)
 			.then(pokemon => {
-				console.log("Estes são os pokemon: ", pokemon)
 				setPokemonInfo(pokemon)
 				setIsLoading(false)
 			})
