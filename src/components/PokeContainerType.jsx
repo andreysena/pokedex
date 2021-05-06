@@ -6,24 +6,25 @@ import colorByType from '../utils/colorByType'
 export default ({ types }) => {
             
     return (
-        <S.PokeContainerType>
+        <S.PokeContainerTypesAndWeaknesses>
 
-            <S.TitleTypes>Tipos</S.TitleTypes>
+            <S.TitleTypesAndWeaknesses>Tipos</S.TitleTypesAndWeaknesses>
             
-            <S.TypesContainer>
+            <S.TypesAndWeaknessesContainer>
                                 
                 {
                     types ?
-                    types.map((pokeTypes, index)=> {
+                    types.map((pokeType, index) => {
                         
                         const type = types[index].type.name
                         
                         return(
                                 <S.EachType 
+                                    key={index}
                                     bgColor={colorByType(type)}
                                 >
                                     <S.TextOfType color={colorByType(type)}>
-                                        { pokeTypes.type.name }
+                                        { pokeType.type.name }
                                     </S.TextOfType>
                                 </S.EachType> 
                         )
@@ -32,7 +33,7 @@ export default ({ types }) => {
                     :
                     <S.TextOfType>Tipos não encontrados</S.TextOfType>
                 }
-            </S.TypesContainer>
-        </S.PokeContainerType>
+            </S.TypesAndWeaknessesContainer>
+        </S.PokeContainerTypesAndWeaknesses>
     )  
 }

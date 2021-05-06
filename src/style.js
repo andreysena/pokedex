@@ -236,19 +236,19 @@ export const PokemonName = styled.h1`
     }
 `
 
-export const PokeContainerType = styled.div`
+export const PokeContainerTypesAndWeaknesses = styled.div`
     display: flex;
     width: 100%;
     flex-direction: column;
     align-self: center;
-    margin: 4% 0% 5% 0%;
+    margin: 0% 2% 2% 0%;
 
     @media only screen and (min-width: 3840px){
         width: 80%;      
     }
 `
 
-export const TitleTypes = styled.h4`
+export const TitleTypesAndWeaknesses = styled.h4`
     text-align: center;
     margin-bottom: 15px;
 
@@ -257,13 +257,13 @@ export const TitleTypes = styled.h4`
     }
 `
 
-export const TypesContainer = styled.div`
+export const TypesAndWeaknessesContainer = styled.div`
     display: flex;
     background-color: #FFF;
     border: 2px solid #000;
     border-radius: 15px;
     width: 70%;
-    padding: 2%;
+    padding: 1.5%;
     flex-direction: row;
     justify-content: space-around;
     align-self: center;
@@ -281,7 +281,8 @@ export const EachType = styled.div`
     min-width: 30%;
     height: 30px;
     border-radius: 10px;
-    padding: 0% 5% 0% 5%;
+    padding: 0% 4% 0% 4%;
+    margin: 1.5% 0% 1.5% 0%;
     justify-content: center;
     align-items: center;
 

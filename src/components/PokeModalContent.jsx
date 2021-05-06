@@ -5,11 +5,12 @@ import PokeBodyInfo from './PokeBodyInfo'
 import PokeAbilities from './PokeAbilities'
 import PokeContainerType from './PokeContainerType'
 import PokeStats from './PokeStats'
+import PokeContainerWeaknesses from './PokeContainerWeaknesses'
 
 export default (props) => {
 
     const { types, height, weight, abilities, stats } = props
-
+    
     return (
         <S.ModalContent>
 
@@ -24,6 +25,8 @@ export default (props) => {
             </S.FirstModalDivision>
             
             <PokeContainerType types={types} />
+            
+            <PokeContainerWeaknesses types={types} />
 
         </S.ModalContent>
     )

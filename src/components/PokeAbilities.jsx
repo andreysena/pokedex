@@ -8,8 +8,8 @@ export default ({abilities}) => {
         <S.ContainerAbilities>
             <S.ModalTitle>Habilidades:</S.ModalTitle>
             {
-                abilities.map((ability) => {
-                    return <S.ModalP>{ ability.ability.name }</S.ModalP>
+                abilities.map((ability, index) => {
+                    return <S.ModalP key={index}>{ ability.ability.name }</S.ModalP>
                 })
             }
         </S.ContainerAbilities>
